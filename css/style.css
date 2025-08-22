@@ -885,9 +885,13 @@ h8 {
 }
 
 #community_section1 {
-    padding: 200px 0;
+    padding-top: 200px ;
     position: relative;
     overflow: hidden;
+}
+
+.faq{
+    padding-top: 200px;
 }
 
 #contents .screen {
