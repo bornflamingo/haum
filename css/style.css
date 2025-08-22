@@ -88,8 +88,8 @@ body {
 }
 
 .topBtn {
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
             background-color: #fff;
             border-radius: 50%;
             display: flex;
@@ -1110,6 +1110,4 @@ input{
 
 .footer_sns li a:hover{
     opacity: 1;
-
 }
-
