@@ -734,7 +734,6 @@ h8 {
     height: 500px;
     color: #fff;
     background: url(../images/store/store_banner.jpg) repeat center fixed;
-    background-size: cover;
 }
 
 #store_section1 ul {
@@ -1111,4 +1110,5 @@ input{
 
 .footer_sns li a:hover{
     opacity: 1;
+
 }
