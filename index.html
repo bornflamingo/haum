@@ -27,7 +27,10 @@
 </head>
 
 <body>
+
     <div id="wrap">
+        
+
         <div id="popup">
             <p>신규가입 시 <strong>5,000원</strong> 할인쿠폰 제공</p>
         </div>
@@ -188,7 +191,8 @@
 
             <div class="new_wrap" data-aos="fade-up" data-aos="fade-up" data-aos-duration="2000">
                 <div class="video_wrap">
-                    <video src="video/tea.mp4" autoplay muted loop></video>
+                    <video src="video/tea.mp4" autoplay muted loop webkit-playsinline="webkit-playsinline"
+                        playsinline="playsinline"></video>
                     <video muted="" preload="true" loop autoplay webkit-playsinline="webkit-playsinline"
                         playsinline="playsinline">
                 </div>
@@ -579,6 +583,7 @@
                 </div>
 
             </div>
+
         </div>
 
         <div id="community_section2">
@@ -736,6 +741,8 @@
 
             </div>
         </div>
+
+        <p class="topBtn">Top</p>
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -744,6 +751,30 @@
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(function(){
+            // 맨위 부드럽게 이동
+            $(".topBtn").click(function(){
+                $("html,body").animate({
+                    scrollTop: '0'
+                },1000);
+            });
+
+            // 일정구간부터 버튼 나타나게 하기
+           // $(".topBtn").hide();
+            // 스크롤하면,
+            $(window).scroll(function(){
+                // 100보다 크면 보이고, 100보다 작으면 사라진다.
+                if($(this).scrollTop()>100){
+                    $(".topBtn").fadeIn()
+                }else{
+                    $(".topBtn").fadeOut()
+                }
+            });
+        });
+    </script>
+
     <script>
         $(function () {
             // board li a를 클릭하면,
